@@ -19,7 +19,7 @@ class BasicCache(BaseCaching):
         and then assigns them respectively if not
         """
 
-        if key != None or item != None:
+        if key is not None or item is not None:
             self.cache_data[key] = item
 
     def get(self, key):
@@ -28,8 +28,3 @@ class BasicCache(BaseCaching):
         """
 
         return self.cache_data.get(key)
-
-
-
-
-
