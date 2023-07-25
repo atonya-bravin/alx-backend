@@ -128,5 +128,20 @@ my_cache.print_cache()
 **Featured file** -> 1-fifo_cache.py
 
 ### Task 1 [Solution Breakdown]
-
+- Creation of the class and inherit the BaseCaching class. 
+- Implementation of the put method. This method;
+	- Converts a list into a dictionary;
+	```
+	dict_list = list(self.cache_data.items())
+	```
+	- Pops the first item from the list, and extraction of the key,value
+	```
+	removed_key, removed_value = dict_list.pop(0)
+	```
+	- Removes the same item using the key, from the dictionary
+	```
+	self.cache_data.pop(removed_key)
+	```
+- Implementation of the get method. This method 
+	- Returns the value linked to a key in a dictionary
 
