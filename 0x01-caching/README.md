@@ -144,4 +144,9 @@ my_cache.print_cache()
 	```
 - Implementation of the get method. This method 
 	- Returns the value linked to a key in a dictionary
+	```
+	if key not in list(self.cache_data.keys()):
+            return None
 
+        return self.cache_data[key]
+	```
