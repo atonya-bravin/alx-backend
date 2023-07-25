@@ -37,7 +37,7 @@ class FIFOCache(BaseCaching):
         This function returns a specific value
         """
 
-        if key not in self.cache_data.keys:
+        if key not in list(self.cache_data.keys()):
             return None
 
-        return self.cache_data.get(value)
+        return self.cache_data[key]
