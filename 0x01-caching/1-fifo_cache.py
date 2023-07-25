@@ -34,7 +34,7 @@ class FIFOCache(BaseCaching):
 
     def get(self, key):
         """
-        This function returns a specific key
+        This function returns a specific value
         """
 
         if key not in self.cache_data.keys:
