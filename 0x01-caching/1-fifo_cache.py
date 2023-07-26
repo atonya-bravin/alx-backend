@@ -9,6 +9,10 @@ from base_caching import BaseCaching
 
 
 class FIFOCache(BaseCaching):
+    """
+    The caching system class
+    """
+
     def __init__(self):
         """
         initialization method
