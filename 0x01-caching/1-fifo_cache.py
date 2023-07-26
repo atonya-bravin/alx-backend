@@ -9,6 +9,12 @@ from base_caching import BaseCaching
 
 
 class FIFOCache(BaseCaching):
+    def __init__(self):
+        """
+        initialization method
+        """
+        super().__init__()
+
     def put(self, key, item):
         """
         This function checks if the key or item is equal to None
