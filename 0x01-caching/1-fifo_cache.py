@@ -15,7 +15,10 @@ class FIFOCache(BaseCaching):
         and then assigns them respectively if not
         """
 
-        if key is not None or item is not None:
+        if key is None or item is None:
+            pass
+
+        else:
             self.cache_data[key] = item
 
         if len(self.cache_data) > BaseCaching.MAX_ITEMS:
